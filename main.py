@@ -12,7 +12,7 @@ if uploaded_file is not None:
     with st.spinner("Converting PDF to images..."):
         # convert_from_bytes returns a list of PIL Images, one per page.
         try:
-            images = convert_from_bytes(uploaded_file.read())
+            images = /user/bin/convert_from_bytes(uploaded_file.read())
         except Exception as e:
             st.error(f"Failed to convert PDF: {e}")
             st.stop()
